@@ -1,0 +1,64 @@
+/* Styles personnalisés pour la démo */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #e5ddd5; /* Couleur de fond clair inspirée de WhatsApp */
+}
+/* Cache le bouton d'installation par défaut */
+#install-button {
+    display: none;
+}
+/* Styles pour une meilleure visibilité du défilement */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/* Style spécifique pour les bulles de message */
+.message-bubble {
+    max-width: 80%; /* Limite la largeur des bulles */
+    word-wrap: break-word; /* Permet le retour à la ligne automatique */
+}
+.message-mine {
+    background-color: #dcf8c6; /* Vert clair pour mes messages (inspiré WhatsApp) */
+    border-radius: 0.75rem 0.75rem 0 0.75rem; /* Coins arrondis, pas de coin en bas à droite */
+}
+.message-other {
+    background-color: #ffffff; /* Blanc pour les messages des autres */
+    border-radius: 0.75rem 0.75rem 0.75rem 0; /* Coins arrondis, pas de coin en bas à gauche */
+}
+.message-timestamp {
+    font-size: 0.7rem; /* Taille plus petite pour l'horodatage */
+    color: #888; /* Couleur plus douce pour l'horodatage */
+    margin-top: 0.25rem;
+    align-self: flex-end;
+}
+/* Styles pour la bulle d'initiales */
+.sender-initial-bubble {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 0; /* Empêche la bulle initiale de rétrécir */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2); /* Légère ombre pour le texte */
+}
+.sender-initial-mine {
+    background-color: #075e54; /* Couleur WhatsApp verte */
+    margin-left: 8px; /* Espacement de ma bulle */
+}
+.sender-initial-other {
+    background-color: #34b7f1; /* Couleur bleue pour les autres */
+    margin-right: 8px; /* Espacement de la bulle des autres */
+}
